@@ -14,9 +14,9 @@
         placeholder="Ej: 3"
       />
 
-      <label>Método numérico</label>
+      <label>Metodo numerico</label>
       <select v-model="metodo">
-        <option>Eliminación de Gauss</option>
+        <option>Eliminacion de Gauss</option>
         <option>Gauss-Jordan</option>
         <option>Gauss-Seidel</option>
       </select>
@@ -54,7 +54,7 @@
 
       <section class="resultado">
         <h3>Resultado</h3>
-        <div v-if="soluciones.length === 0 && errorMsg === ''">Sin resultados aún.</div>
+        <div v-if="soluciones.length === 0 && errorMsg === ''">Sin resultados aun.</div>
         <div v-if="errorMsg" class="error">{{ errorMsg }}</div>
         <ul v-else>
           <li v-for="(sol, i) in soluciones" :key="i">x{{ i + 1 }} = {{ sol.toFixed(6) }}</li>
