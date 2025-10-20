@@ -124,7 +124,7 @@ function gauss(A, b) {
         maxRow = k
       }
     }
-    if (M[maxRow][i] === 0) throw new Error('El sistema no tiene solución única.')
+    if (M[maxRow][i] === 0) throw new Error('El sistema no tiene solucion unica.')
 
     // Intercambiar filas
     ;[M[i], M[maxRow]] = [M[maxRow], M[i]]
